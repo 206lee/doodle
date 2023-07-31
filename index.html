@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Montserrat:wght@100;400&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sign-page" id="signpage">
+        <div class="signpage-container">
+            <div class="signlogin-container">
+                <h1 class="font1">Doodle</h1>
+                <div class="login">
+                    
+                    <input type="text" value="" placeholder="Phone number,username or email address" class="bottom10" id="loginid">
+                    <input type="password" value="" placeholder="Password" class="bottom10" id=loginpassword>
+                    <button class="Loginbtn bottom10 cursor" id="loginbtn">Login</button>
+                </div>
+                <div>
+                    <button class="Loginbtn cursor">Forgotten your password?</button>
+                </div>
+                <div class="sign-container">
+                    <p class="smallfont bottom10">Don`t have an account?</p>
+                    <button class="Loginbtn cursor" id="sign">Sign</button>
+                    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+
+        <div class="sign-modal" id="signmodal">
+            <div class="signmodal-container">
+                <h1 class="font1">Doodle</h1>
+                <input type="text" value="" placeholder="Mobile number or email address" class="bottom10" id="id">
+                <input type="text" value="" placeholder="Full Name" class="bottom10" id="fullname">
+                <input type="text" value="" placeholder="Username" class="bottom10" id="username">
+                <input type="password" value="" placeholder="Password" class="bottom10" id="password">
+                <button class="signbtn" id="signup">Sign Up</button>
+                <div class="signmodal-login">
+                    <p class="smallfont bottom10">Have an account?</p>
+                    <button class="Loginbtn" id="modallogin">Login</button>
+                </div>
+                <!-- <p id="ex"></p> -->
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <div class="mainpage" id="mainpage">
+        <!-- Header -->
+        <header>
+            <div class="a-container">
+                <div class="b-container top10">
+                    <div class="left10 top10"><p>A</p></div>
+                    <div class="nav-container">
+                        <nav class="atext">
+                            <a href="#" class="atext top10">
+                                <div class="inline nav-icon">
+                                    <span class="material-symbols-outlined">home</span> 
+                                    <p class="left10">HOME</p>
+                                </div>
+                                
+                            </a>
+                            <a href="#" class="atext top10">
+                                <div class="inline nav-icon">
+                                    <span class="material-symbols-outlined">search</span>
+                                    <p class="left10">SEARCH</p>
+                                </div>
+                            </a>
+                            <a href="#" class="atext top10">
+                                <div class="inline nav-icon">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    <p class="left10">MEASSGE</p>
+                                </div>
+                            </a>
+                            <a href="#" class="atext top10">
+                                <div class="inline nav-icon">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="left10">ALARM</p>
+                                </div>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="끄적btn" id="끄적btn">
+                        <p>끄적</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="inline bottom10 left10">
+                        <div><img src="img/profile.png" alt="" class="pfofile-img cursor"></div>
+                        <div class="block left10">
+                            <p class="cursor">206</p>
+                            <p>@206x206</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+    
+        <div class="끄적" id="끄적">
+            <div class="끄적-body">
+                <div class="끄적-top">
+                    <div class="Xbtn left10" id="Xbtn">
+                        <p>X</p>
+                    </div>
+                </div>
+                <div class="끄적-main">
+                    <div>
+                        <img src="img/profile.png" alt="" class="끄적-profile left10 top10">
+                    </div>
+                    <div class="끄적-input">
+                        <div class="끄적-type">
+                            <div class="type">
+                                <span class="material-symbols-outlined cursor">public</span>
+                            </div>
+                            <div class="type">
+                                <span class="material-symbols-outlined cursor right10">format_list_bulleted</span>
+                            </div>
+                        </div>
+                        <input type="text" value="" placeholder="끄적거리기" id =doodlecontent>
+                    </div>
+                </div>
+                <div class="끄적-bottom">
+                    <div>
+                        <div>
+                            <span class="material-symbols-outlined left10 cursor">image</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="끄적끄적btn right10" id="doodlebtn"><p>끄적끄적</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Section -->
+        <section>
+            <div> <!-- panel0 -->
+                <div class="section-container"> <!-- panel1 -->
+                    <div class="section-main minwidth470"> <!-- panel2 -->
+                        <div class="section-top" id="sectiontop"> <!-- panel2n1 -->
+                            <div class="section-profile top5"> <!-- panel2n1n1 -->
+                                <div class="left10"> <!-- panel2n1n1n1 -->
+                                    <img src="img/profile.png" alt="" width="40px" class="cursor">
+                                </div>
+                                <div class="left10"> <!-- panel2n1n1n2 -->
+                                    <p class="cursor" id="usernameex"></p>
+                                    <p id="useridex"></p>
+                                </div>
+                            </div>
+                    
+                            <div class="around right10 top5 cursor" id="dot"> <!-- panel2n1n2 -->
+                                <!-- <span class="material-symbols-outlined"> more_horiz</span> -->
+                                <img src="img/morehoriz.png" alt="" width="30px">
+                            </div>
+                        </div>
+                        <div class="section-body minwidth470"> <!-- panel2n2 -->
+                            <img src="img/img1.png" alt="" class="minwidth470">
+                        </div>
+                        <div class="section-bottom left10 top10"> <!-- panel2n3 -->
+                            <div> <!-- panel2n3n1 -->
+                                <span class="material-symbols-outlined cursor">favorite</span>
+                            </div>
+                            <div class="left10"> <!-- panel2n3n2 -->
+                                <span class="material-symbols-outlined cursor">chat_bubble</span>
+                            </div>
+                            <div class="left10"> <!-- panel2n3n3 -->
+                                <span class="material-symbols-outlined cursor">send</span>
+                            </div>
+                            
+                        </div>
+                        <div class="left10 bottom10" id="doodlecontent"> <!-- panel2n4 -->
+                            <p>test</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <script src="main.js" defer></script>
+</body>
+</html>
