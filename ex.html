@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user;
+        let usernumb = 0
+
+        var user = 'user' + usernumb.toString()
+        console.log("첫유저이름" , user)
+
+        user = {
+            usernumb : usernumb
+        }
+
+        console.log(user.usernumb)
+
+        usernumb++
+
+        console.log("두번째유저이름" , 'user' + usernumb.toString())
+
+        console.log(usernumb)
+
+        localStorage.setItem('user', user)
+        console.log(localStorage.getItem("user"))
+        console.log(localStorage.getItem("user").usernumb)
+        localStorage.getItem("user")
+        console.log(localStorage.getItem("user").usernumb)
+        var user = "user" + localStorage.getItem("user").usernumb
+        console.log(user)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sign-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signpage-container{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid antiquewhite;
+}
+.signlogin-container{
+    display: block;
+    text-align: center;
+}
+
+.font1{
+    font-family: 'Moirai One', cursive;
+    margin: 30px 0;
+}
+
+.login input{
+    display: block;
+    font-size: 0.7rem;
+    width: 240px;
+    height: 30px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    outline: none;
+}
+
+.Loginbtn{
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 207, 144);
+    border: 1px solid rgb(255, 207, 144);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block
+}
+
+.sign-container{
+    margin-top: 120px;
+}
+
+.sign-modal{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+.signmodal-container{
+    display: block;
+}
+.signmodal-container input{
+    display: block;
+    font-size: 0.7rem;
+    width: 240px;
+    height: 30px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    outline: none;
+}
+
+.signbtn{
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgb(212, 212, 212);
+    color: rgb(255, 255, 255);
+    display: block
+}
+
+.signmodal-login{
+    margin-top: 120px;
+}
+
+/* Mainpage */
+
+.mainpage{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid antiquewhite;
+    border-left: 2px solid antiquewhite;
+    z-index: 1;
+}
+
+.a-container{
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.b-container{
+    width: 260px;
+}
+.nav-container{
+    width: 260px;
+    height: 600px;
+}
+
+.atext{
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    color: black;
+    
+}
+.atext:hover{
+    color: hotpink;
+}
+
+.nav-icon{
+    padding: 15px;
+    border-radius: 150px;
+}
+.nav-icon:hover{
+    background-color: antiquewhite;
+}
+
+.끄적btn{
+    width: 170px;
+    height: 30px;
+    background-color: rgb(201, 201, 201);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto 0;
+}
+.끄적btn:hover{
+    background-color: antiquewhite;
+    color: hotpink;
+}
+
+.pfofile-img{
+    width: 40px;
+}
+
+/* 끄적끄적 */
+
+
+.끄적{
+    background-color: rgb(18, 19, 20);
+    background-color: rgba(110, 110, 110, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: none;
+}
+.끄적-body{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 280px;
+    border-radius: 15px;
+    margin: 100px auto;
+    z-index: 1;
+    min-width: 500px;
+}
+
+.끄적-top{ 
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.Xbtn{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.Xbtn:hover{
+    background-color: antiquewhite;
+}
+
+.끄적-main{
+    height: 72%;
+    display: flex;
+}
+.끄적-type{
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+}
+.type{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.끄적-input{
+    width: 460px;
+}
+.끄적-input input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.끄적-profile{
+    width: 40px;
+    height: 40px;
+}
+
+.끄적-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    border-top: 1px solid antiquewhite;
+    height: 16%;
+}
+
+
+
+
+.끄적끄적btn{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(201, 201, 201);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto 0;
+    border: none;
+}
+
+.끄적끄적btn:hover{
+    background-color: antiquewhite;
+    color: hotpink;
+}
+
+/* Section */
+section{
+    position: static;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    min-width: 470px;
+    padding-right: 200px;
+}
+.section-container{
+    width: 630px;
+    display: flex;
+    justify-content: center;
+}
+.section-main{
+    width: 470px;
+    min-width: 470px;
+    border: 2px solid antiquewhite;
+}
+
+/* Section - top */
+.section-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.section-profile{
+    display: inline-flex;
+}
+.around{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Section - main */
+.section-body{
+
+}
+
+/* Section - bottom */
+.section-bottom{
+    display: inline-flex;
+    align-items: center;
+}
+.cursor{
+    cursor: pointer;
+}
+
+.imgdiv{
+    min-width: 470px;
+}
+.minwidth470{
+    min-width: 470px;
+}
+/* Text Type */
+
+.inline{
+    display: inline-flex;
+    align-items: center;
+}
+
+.block{
+    display: flex;
+    display: block;
+}
+
+.center{
+    align-items: center;
+}
+
+.top10{
+    margin-top: 10px;
+}
+
+.right10{
+    margin-right: 10px;
+}
+.left10{
+    margin-left: 10px;
+}
+
+.bottom10{
+    margin-bottom: 10px;
+}
+
+.top5{
+    margin-top: 5px;
+}
+
+.marginauto{
+    margin: 0 auto 0;
+}
+
+.smallfont{
+    font-size: 0.7rem;
+}
+
+/* Main */
