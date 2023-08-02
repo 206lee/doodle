@@ -1,27 +1,24 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
-/* Header */
-
 body{
     width: 100vw;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
 }
 
-.sign-page{
+/* Login-page */
+.Loginpage{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-.signpage-container{
-    width: 400px;
+.Loginpage-container{
+    width: 360px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -32,12 +29,9 @@ body{
     display: block;
     text-align: center;
 }
-
 .font1{
-    font-family: 'Roboto', sans-serif;
     margin: 30px 0;
 }
-
 .login input{
     display: block;
     font-size: 0.7rem;
@@ -46,10 +40,10 @@ body{
     border: 1px solid rgb(202, 202, 202);
     border-radius: 5px;
     outline: none;
+    padding-left: 5px;
 }
-
 .Loginbtn{
-    width: 240px;
+    width: 247px;
     height: 30px;
     border-radius: 10px;
     border: none;
@@ -59,20 +53,26 @@ body{
     cursor: pointer;
     display: block
 }
-
 .sign-container{
-    margin-top: 120px;
+    margin-top: 163px;
+}
+.sign-container p{
+    margin-bottom: 10px;
 }
 
+
+
+/* Sign-modal */
 .sign-modal{
-    width: 400px;
+    width: 360px;
     height: 500px;
     background-color: white;
     position: absolute;
     display: none;
     justify-content: center;
     text-align: center;
-    z-index: 1;
+    border: 2px solid pink;
+    border-radius: 15px;
 }
 .signmodal-container{
     display: block;
@@ -85,10 +85,10 @@ body{
     border: 1px solid rgb(202, 202, 202);
     border-radius: 5px;
     outline: none;
+    padding-left: 5px;
 }
-
 .signbtn{
-    width: 240px;
+    width: 247px;
     height: 30px;
     border-radius: 10px;
     border: none;
@@ -97,9 +97,112 @@ body{
     color: rgb(255, 255, 255);
     display: block
 }
-
 .signmodal-login{
     margin-top: 120px;
+}
+.sign-container p{
+    margin-bottom: 10px;
+}
+
+
+/* 아이폰프로12pro 갤럭시S8+  */
+@media(max-width:391px){
+    /* Login */
+    .Loginpage-container{
+        width: 330px;
+    }
+    /* Sign */
+    .sign-modal{
+        width: 330px;
+    }
+}
+
+/* 갤럭시폴드 */
+@media(max-width:281px){
+    /* Login */
+    .Loginpage-container{
+        width: 265px;
+    }
+    /* Sign */
+    .sign-modal{
+        width: 265px;
+    }
+}
+
+/* 가로모드 */
+@media(max-height:415px){
+    /* Login */
+    .Loginpage-container{
+        width: 500px;
+        height: 300px;
+    }
+    .font1{
+        margin: 10px 0;
+    }
+ 
+    .sign-container{
+        margin-top: 10px;
+    }
+    /* Sign */
+    .sign-modal{
+        width: 500px;
+        height: 300px;
+    }
+    .sign-modal .font1{
+        margin-top: 5px;
+    }
+    .signmodal-login{
+        margin-top: 10px;
+    }
+    .sign-container p{
+        margin-bottom: 10px;
+    }
+    .signmodal-container input{
+        margin-bottom: 5px;
+    } 
+}
+
+/* 가로모드 갤럭시폴드 */
+
+@media(max-height:280px){
+    /* Login */
+    .Loginpage-container{
+        width: 500px;
+        height: 265px;
+    }
+    .font1{
+        margin: 5px 0;
+    }
+    .sign-container{
+        margin-top: 0px;
+    }
+    .sign-container p{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    /* Sign */
+    .sign-modal{
+        width: 500px;
+        height: 265px;
+    }
+    .sign-modal .font1{
+        margin-top: 4px;
+    }
+    .signmodal-login{
+        margin-top: 10px;
+    }
+    .sign-container p{
+        margin-bottom: 10px;
+    }
+    .signmodal-container input{
+        margin-bottom: 4px;
+    }
+    .signmodal-container input{
+        height: 25px;
+    }
+    .signbtn{
+        height: 25px;
+    }
 }
 
 /* Mainpage */
