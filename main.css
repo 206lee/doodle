@@ -673,6 +673,7 @@ header button span{
         justify-content: center;
         width: 100%;
         top: 50px;
+        position: absolute;
     }
     .main-right{
         display: none;
