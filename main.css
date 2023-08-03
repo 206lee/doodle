@@ -227,16 +227,16 @@ header{
 }
 .header-top input{
     height: 30px;
-    width: 220px;
+    width: 200px;
     padding-left: 5px;
-    margin-right: 10px;
     border: none;
     border-radius: 5px;
     background-color: rgb(236, 236, 236);
     outline: none;
 }
 .header-top a{
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -267,9 +267,9 @@ header button{
     display: inline-flex;
 }
 
-/* nav{
-    display: block;
-} */
+header nav{
+    display: flex;
+}
 .menu li{
     padding: 5px;
     border-radius: 100px;
@@ -396,7 +396,8 @@ footer nav{
     height: 28px;
     border-radius: 100%;
 }
-@media(max-width:1200px)and(min-width:767px){
+@media all and (max-width:1260px) and (min-width:770px)
+{
     header{
         width: 70px;
         text-align: center;
@@ -466,7 +467,7 @@ footer nav{
     }
 }
 
-@media(max-width:767px){
+@media(max-width:770px){
     header{
         width: 100%;
         height: 50px;
@@ -479,12 +480,8 @@ footer nav{
         display: flex;
         justify-content: space-between;
     }
-    
-    .logo{
-        font-size: 40px;
-        border-radius: none;
-        font-size: 25px;
-        margin: auto 0 auto 10px;
+    header nav{
+        display: none;
     }
     .header-top{
         display: flex;
