@@ -673,9 +673,14 @@ header button span{
         display: flex;
         justify-content: center;
         position: absolute;
+        left: 0;
+        right: 0;
     }
     .main-right{
         display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .doodlenumb{
         margin-top: 50px;
