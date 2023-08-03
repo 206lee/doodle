@@ -249,6 +249,7 @@ header{
 }
 .header-top img{
     width: 24px;
+    height: 24px;
 }
 header nav{
     display: none;
@@ -344,7 +345,7 @@ header button span{
 .header-bottom p{
     margin-left: 10px;
 }
-footer{
+.bottom-nav{
     display: none;
     border-top: 1.5px solid pink;
     border-bottom: 1.5px solid pink;
@@ -354,18 +355,17 @@ footer{
     bottom: 0;
     align-items: center;
 }
-footer nav{
+.bottom-nav nav{
     width: 100%;
 }
 .menu1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
 }
 .menu1 li{
-    padding: 5px;
-    border-radius: 100px;
+    border-radius: 100%;
     list-style: none;
 }
 .menu1 li:hover{
@@ -395,6 +395,17 @@ footer nav{
     width: 28px;
     height: 28px;
     border-radius: 100%;
+}
+.menu1 button{
+    border: none;
+    font-size: 1.7rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.menu1 button:hover{
+    background-color: pink;
 }
 @media all and (max-width:1260px) and (min-width:770px)
 {
@@ -492,10 +503,112 @@ footer nav{
     header button{
         display: none;
     }
-    footer{
+    .bottom-nav{
         display: flex;
     }
 }
+
+/* Doodle Page */
+.doodlepage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(18, 19, 20);
+    background-color: rgba(110, 110, 110, 0.4);
+    display: none;
+}
+.CloseDoodle{
+    display: flex;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 10px;
+
+}
+.CloseDoodle:hover{
+    background-color: pink;
+    color: white;
+}
+.doodlecontainer{
+    background-color: white;
+    width: 540px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 100px auto;
+}
+
+.Doodle-top{
+    width: 540px;
+    height: 50px;
+    border-bottom: 1.5px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    position: relative;
+}
+.Doodle-body{
+    height: 200px;
+    width: 540px;
+}
+.Doodle-body input{
+    outline: none;
+    border: none;
+    width: 520px;
+    margin: 10px;
+}
+.Doodle-bottom{
+    width: 540px;
+    height: 50px;
+    border-top: 1.5px solid pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Doodle-icons{
+    margin-left: 10px;
+}
+.doodlebtn{
+    background-color: pink;
+    width: 80px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+@media(max-width: 700px){
+    .doodlecontainer{
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        border-radius: 0;
+    }
+    .Doodle-top{
+        width: 100%;
+    }
+    .Doodle-bottom{
+        width: 100%;
+    }
+}
+
+.realupload{
+    display: none;
+}
+.upload{
+    cursor: pointer;
+}
+
+
 
 /* Text Type */
 

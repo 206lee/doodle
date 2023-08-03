@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <div class="mainpage">
+    <div class="mainpage" id="mainpage">
         <header>
             <div class="header-container">
                 <h1 class="logo" id="logo">D<p>o</p><p>o</p><p>d</p><p>l</p><p>e</p></h1>
@@ -105,18 +105,25 @@
 
             </div>
             
-            <button><p>Doodle</p> <span>D</span></button>
+            <button id="doodlebtn1"><p>Doodle</p> <span>D</span></button>
 
             <div class="header-bottom">
-                <div class="profileImg" id="profileImg"><img src="img/boy7.jpg" alt=""></div>
+                <div class="profileImg" id="profileImg"><img src="img/gray.png"alt=""></div>
                 <div class="profileUser">
                     <p>206</p>
                     <p>@206x206</p>
                 </div>
             </div>
         </header>
-        <div></div>
-        <footer>
+        <div class="main">
+            <div class="main-left">
+
+            </div>
+            <div class="main-right">
+
+            </div>
+        </div>
+        <div class="bottom-nav">
             <nav>
                 <ul class="menu1">
                     <li>
@@ -129,10 +136,10 @@
                             <span class="material-symbols-outlined">mail</span> 
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li class="button">
+                        <button id="doodlebtn2">
                             D
-                        </a>
+                        </button>
                     </li>
                     <li>
                         <a href="">
@@ -140,11 +147,36 @@
                         </a>
                     </li>
                     <li>
-                        <a href=""><img src="img/boy7.jpg" alt=""></a>
+                        <a href=""><img src="img/gray.png" alt=""></a>
                     </li>
                 </ul>
             </nav>
-        </footer>
+        </div>
+
+        <div class="doodlepage" id="doodlepage">
+            
+            <div class="doodlecontainer" id="doodlecontainer">
+                
+                <div class="Doodle-top">
+                    <span>Doodle</span>
+                    <p class="CloseDoodle" id="CloseDoodle">X</p>
+                </div>
+                <div class="Doodle-body">
+                    <input type="text" placeholder="Doodle Doodle">
+                </div>
+                <div class="Doodle-bottom">
+                    <div class="Doodle-icons">
+                        <input type="file" accept="image/*" class="realupload" id="realupload">
+                        <span class="material-symbols-outlined upload" id="upload">
+                            image
+                        </span>
+                    </div>
+                    <div class="doodlebtn">Doodle</div>
+                    
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
    

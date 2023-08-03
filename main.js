@@ -98,7 +98,36 @@ for(let i = 0; i < logolist.length; i++){
 }
 
 
-// // Main page
+// Main page
+
+const mainpage = document.querySelector('#mainpage')
+
+const doodlebtn1 = document.querySelector('#doodlebtn1')
+const doodlebtn2 = document.querySelector('#doodlebtn2')
+const doodlepage = document.querySelector('#doodlepage')
+const CloseDoodle = document.querySelector('#CloseDoodle')
+
+const realupload = document.querySelector('#realupload')
+const upload = document.querySelector('#upload')
+
+
+doodlebtn1.addEventListener('click', ()=>{
+    doodlepage.style.display = 'flex'
+})
+doodlebtn2.addEventListener('click', ()=>{
+    doodlepage.style.display = 'flex'
+})
+
+
+// Doodle Page
+CloseDoodle.addEventListener('click', ()=>{
+    doodlepage.style.display = 'none'
+})
+upload.addEventListener('click', ()=>{
+    realupload.click();
+})
+
+
 // const Xbtn = document.querySelector("#Xbtn")
 // const 끄적btn = document.querySelector("#끄적btn")
 // const 끄적 = document.querySelector("#끄적")
