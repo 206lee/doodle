@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 body{
     width: 100vw;
@@ -13,7 +14,7 @@ body{
 .Loginpage{
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -206,241 +207,293 @@ body{
 }
 
 /* Mainpage */
-
 .mainpage{
-    display: none;
+    display: flex;
     width: 100%;
     height: 100%;
 }
+
+/* Header */
 
 header{
-    width: 300px;
+    width: 280px;
     height: 100%;
-    border-right: 2px solid antiquewhite;
-    border-left: 2px solid antiquewhite;
+    border-right: 1.5px solid pink;
     z-index: 1;
 }
-
-.a-container{
-    width: 260px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.b-container{
-    width: 260px;
-}
-.nav-container{
-    width: 260px;
-    height: 600px;
-}
-
-.atext{
-    box-sizing: border-box;
-    text-decoration: none;
-    display: block;
-    color: black;
-    
-}
-.atext:hover{
-    color: hotpink;
-}
-
-.nav-icon{
-    padding: 15px;
-    border-radius: 150px;
-}
-.nav-icon:hover{
-    background-color: antiquewhite;
-}
-
-.끄적btn{
-    width: 170px;
-    height: 30px;
-    background-color: rgb(201, 201, 201);
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 0 auto 0;
-}
-.끄적btn:hover{
-    background-color: antiquewhite;
-    color: hotpink;
-}
-
-.pfofile-img{
-    width: 40px;
-}
-
-/* 끄적끄적 */
-
-
-.끄적{
-    background-color: rgb(18, 19, 20);
-    background-color: rgba(110, 110, 110, 0.4);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: auto;
+.header-top{
     display: none;
 }
-.끄적-body{
-    background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 280px;
-    border-radius: 15px;
-    margin: 100px auto;
-    z-index: 1;
-    min-width: 500px;
+.logo{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 10px;
+    display: inline-flex;
 }
 
-.끄적-top{ 
-    height: 12%;
-    display: flex;
-    align-items: center;
+/* nav{
+    display: block;
+} */
+.menu li{
+    padding: 5px;
+    border-radius: 100px;
+    margin: 10px;
 }
-
-.Xbtn{
-    width: 25px;
-    height: 25px;
+.menu li:hover{
+    background-color: pink;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    font-weight: 100;
     cursor: pointer;
 }
-.Xbtn:hover{
-    background-color: antiquewhite;
+.menu a span{
+    font-size: 1.35rem;
+    padding-right: 10px;
+}
+.menu a:hover{
+    color: white;
 }
 
-.끄적-main{
-    height: 72%;
-    display: flex;
-}
-.끄적-type{
-    height: 50px;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: end;
-}
-.type{
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-.끄적-input{
-    width: 460px;
-}
-.끄적-input input{
-    width: 100%;
-    outline: none;
-    border: none;
-    font-size: 1.5rem;
-}
-
-.끄적-profile{
-    width: 40px;
-    height: 40px;
-}
-
-.끄적-bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 500px;
-    border-top: 1px solid antiquewhite;
-    height: 16%;
-}
-
-
-
-
-.끄적끄적btn{
-    width: 80px;
+header button{
+    width: 200px;
     height: 30px;
     background-color: rgb(201, 201, 201);
     color: white;
+    border: none;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     margin: 0 auto 0;
-    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    position: relative;
+}
+header button:hover{
+    background-color: hotpink;
+    color: white;
+}
+header button span{
+    display: none;
 }
 
-.끄적끄적btn:hover{
-    background-color: antiquewhite;
-    color: hotpink;
+.header-bottom{
+    position: absolute;
+    bottom: 0;
+    border-radius: 80px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 260px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.header-bottom:hover{
+    background-color: pink;
+    color: white;
+}
+.header-bottom img{
+    width: 45px;
+    border-radius: 100%;
 }
 
-/* Section */
-section{
-    position: static;
+.header-bottom p{
+    margin-left: 10px;
+}
+footer{
+    display: none;
+    border-top: 1.5px solid pink;
+    border-bottom: 1.5px solid pink;
     width: 100%;
-    height: 100%;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    min-width: 470px;
-    padding-right: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
 }
-.section-container{
-    width: 630px;
-    display: flex;
-    justify-content: center;
-}
-.section-main{
-    width: 470px;
-    min-width: 470px;
-    border: 2px solid antiquewhite;
-}
-
-/* Section - top */
-.section-top{
+footer nav{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-
 }
-.section-profile{
-    display: inline-flex;
-}
-.around{
+.menu1{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
+    gap: 30px;
+}
+.menu1 li{
+    padding: 5px;
+    border-radius: 100px;
+    list-style: none;
+}
+.menu1 li:hover{
+    background-color: pink;
     width: 40px;
     height: 40px;
-}
-
-/* Section - main */
-.section-body{
-
-}
-
-/* Section - bottom */
-.section-bottom{
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
-.cursor{
+.menu1 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu1 a span{
+    font-size: 1.7rem;
+}
+.menu1 a:hover{
+    color: white;
+}
+.menu1 img{
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
+@media(max-width:1200px)and(min-width:767px){
+    header{
+        width: 70px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        font-size: 35px;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 20px;
+    }
+    .logo:hover{
+        background-color: pink;
+    }
+    .logo p{
+        display: none;
+    }
+    .menu p{
+        display: none;
+    }
+    .menu li{
+        border-radius: 100%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu a span{
+        font-size: 30px;
+        padding: 0;
+    }
+
+    header button{
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        margin: 10px;
+    } 
+
+    header button p{
+        display: none;
+    }  
+    header button span{
+        display: flex;
+    }  
+   
+    .header-bottom{
+        border-radius: 100%;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profileUser{
+        display: none;
+    }
+    .header-bottom img{
+        width: 40px;
+    }
 }
 
-.imgdiv{
-    min-width: 470px;
+@media(max-width:767px){
+    header{
+        width: 100%;
+        height: 50px;
+        border-right: none;
+        border-bottom: 1.5px solid pink;
+        border-top: 1.5px solid pink;
+        padding: 0;
+    }
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        font-size: 40px;
+        border-radius: none;
+        font-size: 25px;
+        margin: auto 0 auto 10px;
+    }
+    .header-top{
+        display: flex;
+        align-items: center;
+    }
+    .header-top input{
+        height: 30px;
+        width: 240px;
+        margin-right: 20px;
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(236, 236, 236);
+        outline: none;
+    }
+    .header-top a{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-top a:hover{
+        background-color: pink;
+    }
+    .header-top img{
+        width: 24px;
+    }
+    header nav{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    .header-bottom{
+        display: none;
+    }
+    footer{
+        display: flex;
+    }
 }
-.minwidth470{
-    min-width: 470px;
-}
+
 /* Text Type */
 
 .inline{

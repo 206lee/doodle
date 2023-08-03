@@ -53,7 +53,7 @@ modallogin.addEventListener('click', ()=>{
 
 
 signup.addEventListener('click', ()=>{
-    if(id.value.length > 0 && fullname.value.length > 0 && username.value.length > 0 && password.value.length > 7 ){
+    if(id.value.length = 11 && fullname.value.length > 0 && username.value.length > 0 && password.value.length > 7 ){
         var user = {
             id : id.value,
             fullname : fullname.value,
@@ -69,24 +69,33 @@ signup.addEventListener('click', ()=>{
         // ex.innerHTML = localStorage.getItem("user1");
         signmodal.style.display = "none"
     }
-        
 })
-   
-
 
 
 function signupbtnchange(){
-        if(id.value.length > 0 & fullname.value.length > 0 & username.value.length > 0 & password.value.length > 7 ){
-            signup.style.background = "rgb(255, 207, 144)"
-            signup.style.cursor = "pointer"
-        }else{
-            signup.style.background = "rgb(212, 212, 212)"
-            signup.style.cursor = "default"
-        }
+    if((id.value.length > 10 || id.value.includes('@') === true) && (fullname.value.length > 0 && typeof(fullname.value) === 'string') && username.value.length > 0 && password.value.length > 7 ){
+        signup.style.background = "rgb(255, 207, 144)"
+        signup.style.cursor = "pointer"
+    }else{
+        signup.style.background = "rgb(212, 212, 212)"
+        signup.style.cursor = "default"
+    }
 }
 
 
+function random(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
+function randomRGB(){
+    return 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')';
+}
+
+const logo = document.querySelector('#logo');
+const logolist = logo.querySelectorAll('p');
+for(let i = 0; i < logolist.length; i++){
+    logolist[i].style.color = randomRGB();
+}
 
 
 // // Main page
