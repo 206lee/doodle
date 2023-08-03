@@ -681,11 +681,13 @@ header button span{
 .doodlepage{
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 2;
     background-color: rgb(18, 19, 20);
     background-color: rgba(110, 110, 110, 0.4);
     display: none;
+    top: 0;
+    left: 0;
 }
 .CloseDoodle{
     display: flex;
