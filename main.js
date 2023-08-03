@@ -1,3 +1,6 @@
+const body = document.querySelector("body")
+const header = document.querySelector("header")
+
 // Login page
 const Loginpage = document.querySelector("#Loginpage")
 const loginid = document.querySelector("#loginid")
@@ -21,6 +24,8 @@ const password = document.querySelector("#password")
 const ex = document.querySelector("#ex")
 
 // // Main page
+
+
 // const mainpage = document.querySelector("#mainpage")
 // const usernameex = document.querySelector("#usernameex")
 // const useridex = document.querySelector("#useridex")
@@ -68,6 +73,7 @@ signup.addEventListener('click', ()=>{
         console.log("pasword=" , JSON.parse(localStorage.getItem("user1")).password)
         // ex.innerHTML = localStorage.getItem("user1");
         signmodal.style.display = "none"
+        loginmodal.style.display = "flex"
     }
 })
 
@@ -107,8 +113,12 @@ const doodlebtn2 = document.querySelector('#doodlebtn2')
 const doodlepage = document.querySelector('#doodlepage')
 const CloseDoodle = document.querySelector('#CloseDoodle')
 
+const settingmodal = document.querySelector('#settingmodal')
+const headerbottom = document.querySelector('#headerbottom')
+
 const realupload = document.querySelector('#realupload')
 const upload = document.querySelector('#upload')
+
 
 
 doodlebtn1.addEventListener('click', ()=>{
@@ -116,6 +126,19 @@ doodlebtn1.addEventListener('click', ()=>{
 })
 doodlebtn2.addEventListener('click', ()=>{
     doodlepage.style.display = 'flex'
+})
+
+headerbottom.addEventListener('click', ()=>{
+    settingmodal.style.display = 'flex'
+})
+
+mainpage.addEventListener('click', e=>{
+    if(e.target === mainpage)settingmodal.style.display = 'none';
+    console.log(e.target)
+})
+header.addEventListener('click', e=>{
+    if(e.target === header)settingmodal.style.display = 'none';
+    console.log(e.target)
 })
 
 
