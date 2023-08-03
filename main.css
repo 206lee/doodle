@@ -463,6 +463,7 @@ header button span{
 }
 .doodlenumb{
     border-bottom: 1.5px solid rgb(214, 214, 214);
+    margin-top: 10px;
 }
 .doodle-content{
     background-color: white;
@@ -671,6 +672,7 @@ header button span{
         display: flex;
         justify-content: center;
         width: 100%;
+        top: 50px;
     }
     .main-right{
         display: none;
