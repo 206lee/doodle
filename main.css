@@ -218,7 +218,7 @@ body{
 header{
     width: 280px;
     height: 100%;
-    border-right: 1.5px solid pink;
+    border-right: 1.5px solid rgb(214, 214, 214);
     z-index: 1;
     position: fixed;
     background-color: white;
@@ -247,7 +247,7 @@ header{
     align-items: center;
 }
 .header-top a:hover{
-    background-color: pink;
+    background-color: rgb(214, 214, 214);
 }
 .header-top img{
     width: 24px;
@@ -279,7 +279,7 @@ header nav{
     margin: 10px;
 }
 .menu li:hover{
-    background-color: pink;
+    background-color: rgb(214, 214, 214);
 }
 .menu a{
     text-decoration: none;
@@ -460,6 +460,7 @@ header button span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 .doodlenumb{
     border-bottom: 1.5px solid rgb(214, 214, 214);
@@ -470,17 +471,17 @@ header button span{
     width: 420px;
     display: grid;
 }
-.doodle-top{
+.doodle_top{
     display: flex;
     justify-content: space-between;
     height: 50px;
     background-color: white;
 }
-.doodle-top-user{
+.doodle_top-user{
     display: flex;
     align-items: center;
 }
-.doodle-top img{
+.doodle_top img{
     width: 34px;
     height: 34px;
     border-radius: 100%;
@@ -510,7 +511,7 @@ header button span{
     cursor: pointer;
 }
 
-.doodle-top-horiz{
+.doodle_top-horiz{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -521,17 +522,17 @@ header button span{
     cursor: pointer;
     margin: auto 0px auto;
 }
-.doodle-top-horiz:hover{
+.doodle_top-horiz:hover{
     background-color: pink;
     color: white;
 }
-.doodlebody{
+.doodle_body{
     display: flex;
     justify-content: center;
 }
-.doodlebody img{
+.doodle_body img{
     width: 420px;
-    height: 530px;
+    height: auto;
 }
 /* .doodle-content div{
     background-color: pink;
@@ -627,6 +628,9 @@ header button span{
     }
     .header-bottom img{
         width: 40px;
+    }
+    .main{
+        width: calc(100% - 70px);
     }
 }
 
@@ -774,11 +778,18 @@ header button span{
         margin-top: 0px;
         border-radius: 0;
     }
-    .Doodle-top{
+    .doodle-top{
         width: 100%;
     }
-    .Doodle-bottom{
+    .doodle-bottom{
         width: 100%;
+        /* margin: 0 5px 0 5px; */
+    }
+    .doodle_top-user{
+        margin: 0 5px 0 5px;
+    }
+    .doodle_bottom{
+        margin: 0 5px 0 5px;
     }
 }
 .realupload{
