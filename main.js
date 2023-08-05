@@ -149,6 +149,17 @@ header.addEventListener('click', e=>{
     console.log(e.target)
 })
 
+function homeopen(){
+    homepage.style.display = 'flex'
+    profilepage.style.display = 'none'
+    console.log('홈 클릭')
+}
+function profileopen(){
+    homepage.style.display = 'none'
+    profilepage.style.display = 'flex'
+    console.log('프로필 클릭')
+}
+
 
 
 //btn
@@ -165,16 +176,6 @@ profilebtn1.addEventListener('click', ()=>{
     profileopen();
 })
 
-
-function homeopen(){
-    homepage.style.display = 'flex'
-    profilepage.style.display = 'none'
-}
-function profileopen(){
-    homepage.style.display = 'none'
-    profilepage.style.display = 'flex'
-    console.log('프로필 클릭')
-}
 
 
 
