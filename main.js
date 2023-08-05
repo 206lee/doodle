@@ -105,7 +105,6 @@ for(let i = 0; i < logolist.length; i++){
 
 
 // Main page
-
 const mainpage = document.querySelector('#mainpage')
 
 const doodlebtn1 = document.querySelector('#doodlebtn1')
@@ -119,6 +118,15 @@ const headerbottom = document.querySelector('#headerbottom')
 const realupload = document.querySelector('#realupload')
 const upload = document.querySelector('#upload')
 
+const main = document.querySelector('#main')
+const profilepage = document.querySelector('#profilepage')
+const homepage = document.querySelector('#homepage')
+
+//btn
+const homebtn = document.querySelector('#homebtn')
+const homebtn1 = document.querySelector('#homebtn1')
+const profilebtn = document.querySelector('#profilebtn')
+const profilebtn1 = document.querySelector('#profilebtn1')
 
 
 doodlebtn1.addEventListener('click', ()=>{
@@ -142,6 +150,34 @@ header.addEventListener('click', e=>{
 })
 
 
+
+//btn
+homebtn.addEventListener('click', ()=>{
+    homeopen();
+})
+homebtn1.addEventListener('click', ()=>{
+    homeopen();
+})
+profilebtn.addEventListener('click', ()=>{
+    profileopen();
+})
+profilebtn1.addEventListener('click', ()=>{
+    profileopen();
+})
+
+
+function homeopen(){
+    homepage.style.display = 'flex'
+    profilepage.style.display = 'none'
+}
+function profileopen(){
+    homepage.style.display = 'none'
+    profilepage.style.display = 'flex'
+    console.log('프로필 클릭')
+}
+
+
+
 // Doodle Page
 CloseDoodle.addEventListener('click', ()=>{
     doodlepage.style.display = 'none'
@@ -149,6 +185,16 @@ CloseDoodle.addEventListener('click', ()=>{
 upload.addEventListener('click', ()=>{
     realupload.click();
 })
+
+// function profilepagenone(){
+//     if(doodlepage.style.display === 'flex'){
+//         profilepage.style.display = 'none'
+//     }
+//     // else{
+//     //     profilepage.style.display = 'flex'
+//     // }
+// }
+
 
 
 // const Xbtn = document.querySelector("#Xbtn")
@@ -275,9 +321,10 @@ upload.addEventListener('click', ()=>{
 
 
 
-function main(){
-    requestAnimationFrame(main)
+function mainfuntion(){
+    requestAnimationFrame(mainfuntion)
     signupbtnchange();
+    // profilepagenone();
 }
 
-main();
+mainfuntion();
