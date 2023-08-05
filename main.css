@@ -449,9 +449,10 @@ header button span{
 /* Main */
 .main{
     width: calc(100% - 280px);
-    display: none;
+    height: 100%;
+    display: grid;
     grid-template-columns: 5fr 1fr;
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
     position: absolute;
     right: 0;
 }
@@ -569,14 +570,10 @@ header button span{
     top: 0;
     right: 0;
     padding: 30px 10px 0 10px;
-
-    display: flex;
+    display: none;
     justify-content: center;
 }
-.profile-page-container{
-        /* width: 860px; */
-    /* background-color: gray;    */
-}
+
 .profile-page-top{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -622,6 +619,9 @@ header button span{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 4px;
+}
+.profile-page-main div{
+    cursor: pointer;
 }
 .profile-page-main img{
     width: 100%;
@@ -723,6 +723,7 @@ header button span{
     }
     .main{
         width: calc(100% - 70px);
+        height: 100%;
     }
     .profile-page{
         width: calc(100% - 70px);
@@ -770,6 +771,12 @@ header button span{
     .bottom-nav{
         display: flex;
         position: fixed;
+    }
+    .main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
     }
     .main-right{
         display: none;

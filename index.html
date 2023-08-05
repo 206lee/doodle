@@ -83,32 +83,32 @@
                 <h1 class="logo" id="logo">D<p>o</p><p>o</p><p>d</p><p>l</p><p>e</p></h1>
                 <nav>
                     <ul class="menu">
-                        <li class="nonelist">
-                            <a href="">
+                        <li class="nonelist" id="homebtn">
+                            <a href="#">
                                 <span class="material-symbols-outlined">home</span> 
                                 <p>HOME</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span class="material-symbols-outlined">search</span> 
                                 <p>SEARCH</p>
                             </a>
                         </li>
                         <li class="nonelist">
-                            <a href="">
+                            <a href="#">
                                 <span class="material-symbols-outlined">mail</span> 
                                 <p>MEASSAGE</p>
                             </a>
                         </li>
                         <li class="nonelist">
-                            <a href="">
+                            <a href="#">
                                 <span class="material-symbols-outlined">favorite</span> 
                                 <p>ALARM</p>
                             </a>
                         </li>
-                        <li class="nonelist">
-                            <a href="">
+                        <li class="nonelist" id="profilebtn">
+                            <a href="#">
                                 <span class="material-symbols-outlined">person</span> 
                                 <p>FROFILE</p>
                             </a>
@@ -122,8 +122,6 @@
                         <img src="img/favorite.png" alt="">
                     </a>
                 </div>
-
-
             </div>
             
             <button class="doodlebtn1" id="doodlebtn1"><p>Doodle</p> <span>D</span></button>
@@ -145,59 +143,62 @@
                 </div>
             </div>
         </header>
-        <div class="main">
-            <div class="main-left">
-                <div></div>
-
-                <div class="doodlenumb">
-                    <div class="doodle-content">
-                        <div class="doodle_top">   
-                            <div class="doodle_top-user">
+        <div id="homepage">
+            <div class="main">
+                <div class="main-left">
+                    <div></div>
+    
+                    <div class="doodlenumb">
+                        <div class="doodle-content">
+                            <div class="doodle_top">   
+                                <div class="doodle_top-user">
+                                    <img src="img/boy7.jpg" alt="">
+                                    <div>
+                                        <div>
+                                            <span class="doodle-username">206</span>
+                                            <span class="doodle-time">  ·   8월 2일</span>
+                                        </div>
+                                        <div>
+                                            <span class="doodle-location">Jeju-do</span>
+                                            <span class="doodle-place">Cafe</span>                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="doodle_top-horiz">
+                                        <span class="material-symbols-outlined">
+                                            more_horiz
+                                        </span>
+                                    </div>
+                            </div>
+    
+                            <div class="doodle_body">
                                 <img src="img/boy7.jpg" alt="">
-                                <div>
-                                    <div>
-                                        <span class="doodle-username">206</span>
-                                        <span class="doodle-time">  ·   8월 2일</span>
-                                    </div>
-                                    <div>
-                                        <span class="doodle-location">Jeju-do</span>
-                                        <span class="doodle-place">Cafe</span>                                        </div>
-                                    </div>
-                                </div>
-                                <div class="doodle_top-horiz">
+                            </div>
+                            <div class="doodle_bottom">
+                                <div class="doodleicons">
                                     <span class="material-symbols-outlined">
-                                        more_horiz
+                                        favorite
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        mode_comment
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        send
                                     </span>
                                 </div>
-                        </div>
-
-                        <div class="doodle_body">
-                            <img src="img/boy7.jpg" alt="">
-                        </div>
-                        <div class="doodle_bottom">
-                            <div class="doodleicons">
-                                <span class="material-symbols-outlined">
-                                    favorite
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    mode_comment
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    send
-                                </span>
+                                <div class="writing">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla iste dolore laborum, corrupti sit nemo similique neque unde commodi aperiam eius tempore iure quasi soluta dolorem ab optio natus.</p>
+                                </div>
                             </div>
-                            <div class="writing">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla iste dolore laborum, corrupti sit nemo similique neque unde commodi aperiam eius tempore iure quasi soluta dolorem ab optio natus.</p>
-                            </div>
-                        </div>
-                    </div>   
+                        </div>   
+                    </div>
+                </div>
+                    
+                <div class="main-right">
+                    넣어놓자
                 </div>
             </div>
-                
-            <div class="main-right">
-                넣어놓자
-            </div>
         </div>
+        
 
         <div class="profile-page" id="profilepage">
             <div class="profile-page-container">
@@ -276,14 +277,14 @@
 
         <div class="bottom-nav">
             <nav>
-                <ul class="menu1">
-                    <li>
-                        <a href="">
+                <ul class="menu1" >
+                    <li id="homebtn1">
+                        <a href="#">
                             <span class="material-symbols-outlined">home</span> 
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <span class="material-symbols-outlined">mail</span> 
                         </a>
                     </li>
@@ -293,12 +294,12 @@
                         </button>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <span class="material-symbols-outlined">person</span> 
                         </a>
                     </li>
-                    <li>
-                        <a href=""><img src="img/gray.png" alt=""></a>
+                    <li id="profilebtn1">
+                        <a href="#"><img src="img/gray.png" alt=""></a>
                     </li>
                 </ul>
             </nav>
