@@ -136,10 +136,10 @@ doodlebtn2.addEventListener('click', ()=>{
     doodlepage.style.display = 'flex'
 })
 
+//settingmodal
 headerbottom.addEventListener('click', ()=>{
     settingmodal.style.display = 'flex'
 })
-
 mainpage.addEventListener('click', e=>{
     if(e.target === mainpage)settingmodal.style.display = 'none';
     console.log(e.target)
