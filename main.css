@@ -446,9 +446,10 @@ header button span{
     color: white;
 }
 
+/* Main */
 .main{
     width: calc(100% - 280px);
-    display: grid;
+    display: none;
     grid-template-columns: 5fr 1fr;
     /* background-color: antiquewhite; */
     position: absolute;
@@ -558,6 +559,97 @@ header button span{
 .main-right{
     background-color: white;
 }
+
+/* Profile-page */
+.profile-page{
+    width:calc(100% - 280px);
+    height: 100%;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px 10px 0 10px;
+
+    display: flex;
+    justify-content: center;
+}
+.profile-page-container{
+        /* width: 860px; */
+    /* background-color: gray;    */
+}
+.profile-page-top{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.profile-page-top-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-page-top img{
+    border-radius: 100%;
+    width: 135px;
+}
+.profile-page-top-right{
+    padding: 20px;
+}
+.followbox{
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+.followbar{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 2px solid pink;
+    width: 100%;
+    padding: 10px 0 10px 0;    
+}
+.postbar{
+    border-top: 2px solid pink;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0 10px 0;
+}
+.postbar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.profile-page-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4px;
+}
+.profile-page-main img{
+    width: 100%;
+}
+
+/* @media screen and (max-width: 860px) 
+{
+    .profile-page-main
+    {
+        background-color: gray;
+        border-top: 1px solid gray;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: auto;
+    }
+} */
+
+/* @media screen and (max-width: 280px)
+{
+    .profile-page-main img{
+        background-color: white;
+    }
+} */
+.profile-page-main img{
+    max-width: 280px;
+    max-height: 280px;
+}
+
 @media all and (max-width:1260px) and (min-width:770px)
 {
     header{
@@ -632,6 +724,15 @@ header button span{
     .main{
         width: calc(100% - 70px);
     }
+    .profile-page{
+        width: calc(100% - 70px);
+        left: 70px;
+
+    }
+    .profile-page-main img{
+        min-width: 100px;
+        min-height: 100px;
+    }
 }
 
 @media(max-width:770px){
@@ -670,16 +771,6 @@ header button span{
         display: flex;
         position: fixed;
     }
-    .main{
-        /* height: 100%; */
-        height: calc(100% - 100px);
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
     .main-right{
         display: none;
         position: absolute;
@@ -688,6 +779,34 @@ header button span{
     }
     .doodlenumb{
         margin-top: 50px;
+    }
+    .profile-page{
+        width: 100%;
+        height: calc(100% - 100px);
+        margin-top: 50px;
+        padding: 0;
+    }
+    .profile-page-top{
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .profile-page-top img{
+        width: 75px;
+    }
+    .followbox{
+        display: none;
+    }
+    .followbar{
+        display: grid;
+    }
+    .postbar p{
+        display: none;
+    }
+    .doodle_top-user{
+        margin: 0 5px 0 5px;
+    }
+    .doodle_bottom{
+        margin: 0 5px 0 5px;
     }
 }
 
@@ -729,7 +848,7 @@ header button span{
     margin: 100px auto;
 }
 
-.Doodle-top{
+.doodle-top{
     width: 540px;
     height: 50px;
     border-bottom: 1.5px solid pink;
@@ -739,17 +858,17 @@ header button span{
     font-size: 1.3rem;
     position: relative;
 }
-.Doodle-body{
+.doodle-body{
     height: 200px;
     width: 540px;
 }
-.Doodle-body input{
+.doodle-body input{
     outline: none;
     border: none;
     width: 520px;
     margin: 10px;
 }
-.Doodle-bottom{
+.doodle-bottom{
     width: 540px;
     height: 50px;
     border-top: 1.5px solid pink;
@@ -757,7 +876,7 @@ header button span{
     align-items: center;
     justify-content: space-between;
 }
-.Doodle-icons{
+.doodle-icons{
     margin-left: 10px;
 }
 .doodlebtn{
@@ -772,25 +891,30 @@ header button span{
     margin-right: 10px;
 }
 @media(max-width: 700px){
+    .profile-page{
+        height: calc(100%-100px);
+    }
+    .doodlepage{
+        width: 100%;
+        
+    }
     .doodlecontainer{
         width: 100%;
         height: 100%;
-        margin-top: 0px;
+        margin: 0px;
         border-radius: 0;
     }
     .doodle-top{
+        width: 100%;
+    }
+    .doodle-body{
         width: 100%;
     }
     .doodle-bottom{
         width: 100%;
         /* margin: 0 5px 0 5px; */
     }
-    .doodle_top-user{
-        margin: 0 5px 0 5px;
-    }
-    .doodle_bottom{
-        margin: 0 5px 0 5px;
-    }
+
 }
 .realupload{
     display: none;
@@ -811,10 +935,10 @@ header button span{
     display: block;
 }
 
-.center{
-    align-items: center;
-}
 
+.left25{
+    margin-left: 25px;
+}
 .top10{
     margin-top: 10px;
 }
@@ -833,13 +957,47 @@ header button span{
 .top5{
     margin-top: 5px;
 }
+.left5{
+    margin-left: 5px;
+}
 
 .marginauto{
     margin: 0 auto 0;
 }
-
+.midfont{
+    font-size: 1rem;
+}
+.font8{
+    font-size: 0.8rem;
+}
 .smallfont{
     font-size: 0.7rem;
+}
+.colorgray{
+    color: gray;
+}
+
+
+.flex{
+    display: flex;
+}
+.spacebetween{
+    justify-content: space-between;
+}
+.alignitemscenter{
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textcenter{
+    text-align: center;
+}
+
+.cursor{
+    cursor: pointer;
 }
 
 /* Main */
